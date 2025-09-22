@@ -1,0 +1,31 @@
+title: "My API Developer Portal"
+description: "A simple portal powered by Reunite and Redocly."
+
+appearance:
+  theme:
+    colors:
+      primary: "#32329f"
+
+navigation:
+  - label: Home
+    page: pages/index.mdx
+  - label: Getting Started
+    page: pages/getting-started.mdx
+  - label: API Reference
+    api: sample@v1
+
+apis:
+  sample@v1:
+    root: ./openapi/openapi.yaml
+    referenceDocs:
+      theme:
+        colors:
+          primary:
+            main: "#32329f"
+      generateCodeSamples:
+        languages:
+          - lang: curl
+          - lang: Node.js
+          - lang: JavaScript
+          - lang: PHP
+          - lang: Python
