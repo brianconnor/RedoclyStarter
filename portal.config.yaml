@@ -1,18 +1,25 @@
-title: "My API Developer Portal"
-description: "A simple portal powered by Reunite and Redocly."
+title: "My Advanced API Portal"
+description: "Developer portal with guides, reference, and reusable components."
 
 appearance:
   theme:
     colors:
       primary: "#32329f"
+      secondary: "#ff6600"
+    typography:
+      fontFamily: "Inter, sans-serif"
 
 navigation:
   - label: Home
     page: pages/index.mdx
   - label: Getting Started
     page: pages/getting-started.mdx
+  - label: Authentication
+    page: pages/authentication.mdx
   - label: API Reference
     api: sample@v1
+  - label: Error Handling
+    page: pages/errors.mdx
 
 apis:
   sample@v1:
@@ -26,6 +33,4 @@ apis:
         languages:
           - lang: curl
           - lang: Node.js
-          - lang: JavaScript
-          - lang: PHP
           - lang: Python
